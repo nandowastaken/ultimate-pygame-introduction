@@ -4,6 +4,7 @@ from sys import exit
 pygame.init()
 screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("One of my games lmao")
+clock = pygame.time.Clock()
 
 while True:
     for event in pygame.event.get():
@@ -15,3 +16,4 @@ while True:
 
     # updates the screen
     pygame.display.update()
+    clock.tick(60)

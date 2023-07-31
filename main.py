@@ -6,8 +6,7 @@ screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("One of my games lmao")
 clock = pygame.time.Clock()
 
-test_surface = pygame.Surface((100, 200))
-test_surface.fill((255, 0, 0))
+test_surface = pygame.image.load('graphics/anna.png')
 
 while True:
     for event in pygame.event.get():
